@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Dúvidas RH</title>
+</head>
+<body>
+   <header>
+      <div class="logo">CIA-Chat</div>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <nav id="navMenu">
+        <a href="#inicio">Início</a>
+        <a href="#contato">Contato</a>
+      </nav>
+   </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>
+                <span class="titulo-principal">Central de Dúvidas</span><br>
+                <span class="subtitulo">do Aluno</span>
+            </h1>
+
+            <p class="descricao">
+                Bem-vindo(a) ao seu assistente RH <br>
+                Tire suas dúvidas de forma rápida!
+            </p>
+
+            <p class="texto-secundario">
+                Aqui você encontra as perguntas mais frequentes sobre o estágio, contratos,
+                ponto eletrônico e muito mais. Explore os tópicos abaixo e obtenha as
+                respostas que precisa de forma simples e prática.
+            </p>
+        </div>
+    </section>
+
+    <!-- BOTÃO FLUTUANTE DO CHAT -->
+    <div class="button-chat" id="buttonChat">
+        ֍
+    </div>
+
+    <!-- JANELA DO CHAT -->
+    <div class="pagina-chat" id="paginaChat" style="display:none;">
+        <div class="chat-header">
+            <div class="logoChat">
+                <h3>CIA Chat</h3>
+            </div>
+            <button id="fecharChat"><strong>X</strong></button>
+        </div>
+
+        <!-- AQUI ESTÁ O AJUSTE IMPORTANTE -->
+       <div class="chat-body" id="chatBody">
+    <div class="mensagem-rcb">
+        <img class="avatar" src="assets/avatar.png" alt="Avatar">
+        <div class="bolha">
+            <p><strong>Assistente RH:</strong> Olá, como posso te ajudar hoje?</p>
+            <span class="time">Agora</span>
+        </div>
+    </div>
+</div>
+        <div class="chat-input">
+            <input type="text" placeholder="Escreva uma pergunta..." id="inputMensagem">
+            <button id="btnEnviar">Enviar</button>
+        </div>
+    </div>
+
+    <footer id="contato">
+        <h2>Contato</h2>
+        <p class="footer-texto">
+            Caso não encontre a resposta que procura, entre em contato conosco.
+        </p>
+
+        <ul class="contato-lista">
+            <li><a href="tel:1234567890"> ✆ Atendimento via WhatsApp</a></li>
+            <li><a href="mailto:informacoes@eniac.edu.br">✉ informacoes@eniac.edu.br</a></li>
+            <li>
+                <img src="assets/localizacao.png" alt="localizacao-branco-png" class="icone-lista">
+                Rua Força Pública, 89 - Centro, Guarulhos - SP
+            </li>
+        </ul>
+    </footer>
+  
+    <!-- SEUS SCRIPTS -->
+    <script src="script.js"></script> 
+
+</body>
+</html>
