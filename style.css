@@ -145,7 +145,7 @@ nav a:hover {
   bottom: 100px;
   right: 30px;
   width: 320px;
-  max-height: 400px;
+  height: 403px;
   background: #DCC6F0;
   border-radius: 20px;
 
@@ -171,9 +171,45 @@ nav a:hover {
   align-items: center;
 }
 
+.logoChat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-header {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .chat-header h3 {
   font-size: 1.1rem;
   margin: 0;
+  color: white;
+}
+
+.online-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  color: #e0e0e0;
+}
+
+.online-dot {
+  width: 8px;
+  height: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .chat-header button {
@@ -225,18 +261,30 @@ nav a:hover {
 .mensagem-rcb .bolha {
   background:#ffffff ;
   color: rgba(30, 51, 192, 1);
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 10px 14px;
   max-width: 75%;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  position: relative; 
+  position: relative;
+}
+
+.mensagem-rcb .bolha::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  bottom: 8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 8px 6px 0;
+  border-color: transparent #ffffff transparent transparent;
 }
 
 .mensagem-rcb .avatar{
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin-right:-8px;
   flex-shrink: 0; /*Garante que a imagem não encolha*/
@@ -314,7 +362,7 @@ nav a:hover {
   transition: background 0.3s ease;
   height: 35px;
   width: 65px;
-  
+  border: none;
   
 }
 
